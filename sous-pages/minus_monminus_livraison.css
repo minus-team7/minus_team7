@@ -53,4 +53,18 @@ body{
 .logo-minus-footer{
     display: flex;
     justify-content: center;
+
+}
+
+/* Sous nav */
+
+.sousnav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.sousnav p {
+
+
 }
