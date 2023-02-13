@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;700&family=Raleway:ital,wght@0,100;0,400;0,600;0,800;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="minus_commander_choixformule.css">
-    <link rel="stylesheet" href="/minus_common.css">
-    <title>Document</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Raleway:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Commander</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -43,6 +48,52 @@
             <img  src="/assets/Logo_minus_rondtête.svg" alt="Logo Minus">
         </ul>
         </nav>
+    <div class="etapes">
+        <div class="etape">
+            <span class="nombre">1</span>
+            <span class="text">Choix de Formule</span>
+        </div>
+        <div class="separateur"></div>
+        <div class="etape" id="desactiver">
+            <span class="nombre">2</span>
+            <span class="text">Choix de recette</span>
+        </div>
+        <div class="separateur"></div>
+        <div class="etape" id="desactiver">
+            <span class="nombre">3</span>
+            <span class="text">Paiement</span>
+        </div>
+    </div>
+    <h1 id="choix">Choix de formule</h1>
+    <p>Vous pouvez choisir une ou deux box par semaine, vous pourrez ensuite régler les détails de votre <br> abonnement
+        depuis la page “Mon Minus”</p>
+
+    <div class="container">
+        <div class="box">
+            <div class="boxcentre">
+                <h1>1 Box</h1>
+                <p>Cette box contient 5 repas avec deux desserts offerts</p>
+                <h5>39.90€</h5>
+            </div>
+            <div class="bouton">
+                <button>Choisir</button>
+            </div>
+
+
+
+        </div>
+        <div class="box">
+            <div class="boxcentre">
+                <h1>2 Box</h1>
+                <p>Deux boxs avec 5 repas chacunes avec deux desserts offerts</p>
+                <h5>59.90€</h5>
+            </div>
+            <div class="bouton">
+                <button>Choisir</button>
+            </div>
+
+
+        </div>
     </header>
     <!-- footer -->
     <div class="footer">
@@ -83,4 +134,43 @@
 
     </div>
 </body>
+<!-- footer  -->
+<div class="footer">
+    <ul>
+        <li class="titre-footer">Minus</li>
+        <li><a href="#"> Nos recettes</a></li>
+        <li><a href="#"> Nos recettes</a></li>
+        <li><a href="#"> Livraison</a></li>
+    </ul>
+    <ul>
+        <li class="titre-footer">A propos</li>
+        <li><a href="#"> Contact</a></li>
+        <li><a href="#"> Avis client</a></li>
+        <li><a href="#"> Qui sommes-nous?</a></li>
+    </ul>
+    <ul>
+        <li class="titre-footer">Aide</li>
+        <li><a href="#"> FAQ</a></li>
+        <li><a href="#"> CGV</a></li>
+        <li><a href="#"> Preferences cookies</a></li>
+    </ul>
+    <ul>
+        <li class="titre-footer">Newsletter</li>
+        <li>
+            <input class="newsletter" type="text" placeholder="Adresse e-mail">
+        </li>
+        <li>
+            <ul class="reseaux-sociaux">
+                <li><a href="#"><img src="/assets/logo_facebook.svg" alt="fb"></a></li>
+                <li><a href="#"><img src="/assets/logo_instagram.svg" alt="insta"></a></li>
+                <li><a href="#"><img src="/assets/logo_twitter.svg" alt="twitter"></a></li>
+            </ul>
+        </li>
+        <li class="logo-minus-footer"><a href="#"> <img src="/assets/Logo_minus_rondtête.svg" alt="logo-minus-footer"></a></li>
+
+    </ul>
+
+
+</div>
+
 </html>
