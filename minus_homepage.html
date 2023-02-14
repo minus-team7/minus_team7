@@ -9,11 +9,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;700&family=Raleway:ital,wght@0,100;0,400;0,600;0,800;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="minus_homepage.css">
+    <link rel="stylesheet" href="minus_common.css">
     <title>Minus - Homepage</title>
     
 </head>
 <body>
-
+    <header>
+        <nav>
+        <ul class="main-menu">
+            <li><a href="minus_homepage.html" class="logo"><img src="/assets/logominusblanc.svg" alt="MINUS"></a></li>
+            <li><a href="sous-pages/minus_commander_choixformule.html">COMMANDER</a></li>
+            <li><a href="sous-page/minus_quisommesnous.html">QUI SOMMES-NOUS</a></li>
+            <li>
+                <div class="search-container">
+                    <!-- <div>
+                        <img src="icone_barre_search.svg" alt="loupe">
+                    </div> -->
+                    <form target="_blank">
+                        <input type="text" placeholder="Recherchez ..."name="q" id="search-input" value="">
+                    </form>
+                </div>
+            </li>
+            <li class="deroulant">
+                <a href="minus_monminus_monprofil.html">MON MINUS</a>
+                <ul class="sous">
+                    <li><a href="#">Connexion</a></li>
+                    <li><a href="#">Inscription</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menu-responsive">
+            <img id="burger" src="/assets/menu_burger_responsive.svg" alt="Ouvrir Menu">
+            <img  src="/assets/Logo_minus_rondtête.svg" alt="Logo Minus">
+        </ul>
+        </nav>
+    </header>
     <div class="box">
         <img src="/assets/homepage_boxminus.svg" alt="homepage_boxminus">
     </div>
