@@ -51,6 +51,133 @@
         <p>Mes recettes</p>
         <p>Service client</p>
         <p>Points fidélité</p>
+    </section>
+  <div class="wrapper">
+        <main>
+            <section class="intro">
+              <div class="intro-left">
+
+ <h3> Informations personnelles </h3>
+
+ <div class="floating-label">
+    <input id="prenom" type="text" required>
+    <label for="prenom"> Prénom </label>
+  </div>
+  <div class="floating-label">
+    <input id="nom" type="text" required>
+    <label for="nom">Nom</label>
+  </div>
+
+  <div class="floating-label">
+
+    <input id="adresse" type="text"  required>
+    <label for="adresse">Adresse de livraison</label> 
+  </div>
+
+  
+  <div class="floating-label">
+    <input id="email" type="text" required>
+    <label for="email">Adresse email</label> 
+    
+  </div>
+  
+  <div class="floating-label">
+    <input type="text" id="input-mdp" required>
+    <label for="mdp">Mot de passe</label> 
+    
+    
+  </div>
+  
+  
+  <a href="#" class="button"> Mettre à jour</a> 
+  
+  
+  
+</div>
+
+
+<div class="intro-right">  
+  
+  
+  <form class="credit-card">
+      <div class="form-header">
+        <h4 class="title">Processus de paiement</h4>
+      </div>
+  
+      <div class="form-body">
+        <!-- numéro carte -->
+        <input type="text" class="cartebancaire" placeholder="Numéro de la carte">
+  
+        <!-- date -->
+        <div class="dates">
+          <div class="mois">
+            <select name="Mois">
+              <option value="janvier">Janvier</option>
+              <option value="fevrier">Février</option>
+              <option value="mars">Mars</option>
+              <option value="avril">Avril</option>
+              <option value="mai">Mai</option>
+              <option value="juin">Juin</option>
+              <option value="juillet">Juillet</option>
+              <option value="aout">Août</option>
+              <option value="septembre">Septembre</option>
+              <option value="octobre">Octobre</option>
+              <option value="novembre">Novembre</option>
+              <option value="décembre">Décembre</option>
+            </select>
+          </div>
+          <div class="annee">
+            <select name="Année">
+              
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2024">2025</option>
+              <option value="2024">2026</option>
+  
+            </select>
+          </div>
+        </div>
+  
+        <!-- Espace vérification -->
+        <div class="card-verification">
+          <div class="cvv-input">
+            <input type="text" placeholder="CVV">
+          </div>
+          <div class="cvv-details">
+            <p>3 or 4 chiffres devant la signature </p>
+          </div>
+        </div>
+  
+        <!-- Button -->
+        <button type="submit" class="proceed-btn"><a href="#">Confirmer</a></button>
+        
+      </div>
+    </form>
+  
+  
+  
+  <label class="checkbox"> 
+    <p> Je souhaite recevoir des alertes par mail et SMS du statut de ma livraison </p>
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+
+    <label class="checkbox"> 
+        <p> Je souhaite recevoir des alertes par mail des astuces cuisines et des recettes à venir </p>
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+</div>
+</div>
         <h1> Infos personnelles </h1>
 
         <ul> 
@@ -118,6 +245,5 @@
         </ul>
 
 
-    </div>
 </body>
 </html>
