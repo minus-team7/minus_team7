@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="minus_commander_infospaiement.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;700&family=Raleway:ital,wght@0,100;0,400;0,600;0,800;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="minus_commander_infospaiement.css">
     <link rel="stylesheet" href="/minus_common.css">
+
     <title>Document</title>
     
 </head>
 <body>
-
-    <header>
+ <header>
         <nav>
         <ul class="main-menu">
             <li><a href="/minus_homepage.html" class="logo"><img src="/assets/logominusblanc.svg" alt="MINUS"></a></li>
@@ -45,6 +48,45 @@
         </ul>
         </nav>
     </header>
+    <div class="wrapper">
+        <div class="etape-container">
+            <div class="etape">
+                <div class="etape-n">1</div>
+                <div>Choix de formule</div>
+            </div>
+            <div class="etape">
+                <div class="etape-n">2</div>
+                <div>Choix de recette</div>
+            </div>
+            <div class="etape-x">
+                <div class="etape-n">3</div>
+                <div>Paiement</div>
+            </div>
+        </div>
+        <h2>Finalisation de commande</h2>
+        <div class="info-compte">
+            <h3>1. Votre compte</h3>
+            <form class="compte">
+                <div class="info-user">
+                    <div>
+                        <label for="email">Email*</label>
+                        <input class="email" type="email" name="email">
+                    </div>
+                    <div>
+                        <label for="password">Mot de passe*</label>
+                        <input class="password" type="password" name="password">
+                    </div>
+                </div>
+                <div class="date-naiss">
+                    <label for="date">Date de naissance*</label>
+                    <div>
+                        <input class="date" type="number" placeholder="Jour">
+                        <input class="date" type="number" placeholder="Mois">
+                        <input class="date" type="number" placeholder="Année">
+                    </div>
+                </div>
+            </form>
+        </div>
     <!-- footer -->
     <div class="footer">
         <ul>
@@ -80,8 +122,6 @@
             <li class="logo-minus-footer"><a href="#"> <img src="/assets/Logo_minus_rondtête.svg" alt="logo-minus-footer"></a></li>
 
         </ul>
-
-
     </div>
 </body>
 </html>
