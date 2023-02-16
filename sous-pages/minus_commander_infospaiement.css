@@ -5,7 +5,7 @@ body{
 }
 .wrapper{
     width: 900px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 .etape-container{
@@ -116,6 +116,7 @@ input{
     margin-top: 40px;
 }
 .bouton-payer input{
+    cursor: pointer;
     background-color: white;
     width:160px;
     height: 50px;
