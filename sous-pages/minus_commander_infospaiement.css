@@ -3,7 +3,6 @@ body{
     font-family: 'Catamaran',sans-serif;
     font-size: 24px;
 }
-
 .wrapper{
     width: 900px;
     margin: 0 auto;
@@ -48,18 +47,13 @@ h2, h3{
 }
 
 .info-compte{
-    margin-top: 35px;
+    margin-top: 50px;
 }
 
 .info-user {
     display: flex;
     justify-content: space-between;
 }
-
-/* .info-user div{
-    display: flex;
-    flex-direction: column;
-} */
 
 input{
     display: inline-block;
@@ -73,89 +67,67 @@ input{
 .date-naiss{
     margin: 15px 0px;
 }
+
 .date{
     width: 150px;
     height: 20px;
     border: 1px solid rgba(0, 0, 0, 0.25z);
     border-radius: 5px;
 }
-body{
-    font-family: 'catamaran',sans-serif;
-    font-family: 'Catamaran',sans-serif;
-    font-size: 24px;
-}
-.wrapper{
-    width: 900px;
-    margin: 0 auto;
-}
 
-.etape-container{
+.info-livraison div{
     display: flex;
-
+    flex-direction: column;
 }
-.etape{
+
+.info-livraison .adresse{
+    width: 95%;
+}
+
+.localisation{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.etape-x{
+.localisation div{
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
-.etape::after{
-    content:"";
-    border: 1px solid black;
-    border-radius: 2px;
-    width: 100px;
-    margin: 5px;
+.localisation input{
+    width: 390px;
 }
 
-.etape-n{
-    cursor: pointer;
-    width: 56px;
-    height: 54px;
-    border: 2px solid white;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
+.info-paiement-date{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-paiement-date div input{
+    width: 390px;
+}
+.info-paiement input{
+    width: 95%;
+}
+
+.bouton-payer{
+    display: flex;
     justify-content: center;
+    margin-top: 40px;
+}
+.bouton-payer input{
+    background-color: white;
+    width:160px;
+    height: 50px;
+    border: 4px #E14D2A solid;
+    border-radius: 25px;
+}
+
+.bouton-payer input:hover{
     background-color: #E14D2A;
 }
 
-h2, h3{
-    text-align: center;
-}
 
-.info-compte{
-    margin-top: 35px;
-}
-
-.info-user {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* .info-user div{
-    display: flex;
-    flex-direction: column;
-} */
-
-input{
-    display: inline-block;
-    width: 400px;
-    height: 20px;
-    padding: 0.5rem 0.1rem;
-    border: 1px solid rgb(221, 221, 221);
-    border-radius: 5px;
-}
-
-.date-naiss{
-    margin: 15px 0px;
-}
-.date{
-    width: 150px;
-    height: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.25z);
-    border-radius: 5px;
+@media screen and (max-width:) {
+    
 }

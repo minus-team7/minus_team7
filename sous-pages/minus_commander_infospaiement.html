@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;700&family=Raleway:ital,wght@0,100;0,400;0,600;0,800;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="minus_commander_infospaiement.css">
-    <link rel="stylesheet" href="/minus_common.css">
+    <link rel="stylesheet" href="../minus_common.css">
 
     <title>Document</title>
     
@@ -26,9 +26,6 @@
             <li><a href="minus_quisommesnous.html">QUI SOMMES-NOUS</a></li>
             <li>
                 <div class="search-container">
-                    <!-- <div>
-                        <img src="icone_barre_search.svg" alt="loupe">
-                    </div> -->
                     <form target="_blank">
                         <input type="text" placeholder="Recherchez ..."name="q" id="search-input" value="">
                     </form>
@@ -66,7 +63,7 @@
         <h2>Finalisation de commande</h2>
         <div class="info-compte">
             <h3>1. Votre compte</h3>
-            <form class="compte">
+            <form>
                 <div class="info-user">
                     <div>
                         <label for="email">Email*</label>
@@ -84,6 +81,53 @@
                         <input class="date" type="number" placeholder="Mois">
                         <input class="date" type="number" placeholder="Année">
                     </div>
+                </div>
+            </form>
+        </div>
+        <div class="info-compte">
+            <h3>2. Votre livraison</h3>
+            <form>
+                <div  iv class="info-livraison">
+                    <div>
+                        <label for="adresse">Adresse de livraison*</label>
+                        <input class="adresse" type="text" name="adresse">
+                    </div>
+                </div>
+                <div class="localisation">
+                    <div>
+                        <label for="code-postal">Code postal*</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="ville">Ville*</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div  iv class="info-livraison">
+                    <div>
+                        <label for="adresse">Adresse secondaire*</label>
+                        <input class="adresse" type="text" name="adresse">
+                    </div>
+                </div>
+                <h3>3. Paiement</h3>
+                <div class="info-paiement">
+                    <div>
+                        <label for="num-crate">Numéro de la carte*</label>
+                        <input class="num-crate" type="text" name="num-crate">
+                    </div>
+                </div>
+                <div class="info-paiement-date">
+                    <div>
+                        <label for="date-exp">Date d'expiration*</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="ville">CVC/CVV*</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="bouton-payer">
+                    <input type="button" value="Payer">
                 </div>
             </form>
         </div>
@@ -120,7 +164,6 @@
                 </ul>
             </li>
             <li class="logo-minus-footer"><a href="#"> <img src="/assets/Logo_minus_rondtête.svg" alt="logo-minus-footer"></a></li>
-
         </ul>
     </div>
 </body>
