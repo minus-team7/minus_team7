@@ -9,7 +9,7 @@ body{
 .footer{
     
     display:flex;
-    flex-direction: row;
+    flex-direction:row;
     justify-content: space-between;
     background-color:  #001253;
     color: #f6f6f6;
