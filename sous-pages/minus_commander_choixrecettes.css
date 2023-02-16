@@ -1,0 +1,307 @@
+/* footer  */
+body{
+    font-family: 'catamaran',sans-serif;
+    font-size: 24px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Raleway' , sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+    color: #E14D2A;
+}
+
+.etapes {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20vw;
+    margin: 2% auto;
+}
+
+.etapes .etape {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.etapes .etape#desactiver {
+    opacity: 0.5;
+}
+
+.etapes .etape span.nombre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 2em;
+    height: 2em;
+    aspect-ratio: 1 / 1;
+    background-color: #E14D2A;
+    margin-right: 1rem;
+}
+
+.etapes .separateur {
+    width: 100%;
+    height: 2px;
+    margin: 1vw;
+    background-color: #000000;
+}
+
+.titre-de-page{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 50px 0; 
+
+}
+
+.grid-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.grid-flex-colonne{
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid-flex-colonne h2, .grid-flex-colonne p{
+    margin-bottom: 70px;
+}
+
+
+.grid-flex-3 .grid-flex-colonne{
+    width: calc(100%/3);
+}
+.grid-flex-4 .grid-flex-colonne{
+    width: calc(100%/4);
+}
+
+.recette-card{
+    background-color: #ffe7e2;
+    border-radius: 20px;
+    height: 100%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.image-recette{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.image-recette:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+
+.nutriscore-plus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0 5px;
+}
+
+.bouton-plus:hover{
+    opacity: 0.8;
+}
+
+.bouton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.bouton a{
+    border:#E14D2A 2px solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #F5EEDC;
+    text-decoration: none;
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+    color: #001253;
+}
+
+.bouton a:hover , .bouton a:active{
+    border:#001253 2px solid;
+    background-color: #E14D2A;
+    color: #F5EEDC;
+
+}
+
+.footer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:  #001253;
+    color: #f6f6f6;
+    padding: 0 100px;
+    flex-wrap: wrap;
+}
+
+.footer ul{
+    list-style-type: none;
+    margin-right: 60px;
+
+}
+
+.footer ul li{
+    margin-top: 25px;
+}
+.footer a{
+    text-decoration: none;
+    color: #f6f6f6;
+}
+.footer a:hover{
+    text-decoration:underline;
+    color: #E14D2A;
+}
+.titre-footer{
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-family: 'raleway',sans-serif;
+
+}
+.newsletter{
+    padding: 10px 30px;
+    border-radius: 20px
+}
+.reseaux-sociaux{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reseaux-sociaux img:hover{
+    opacity:0.3;
+}
+.logo-minus-footer{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 720px){
+    p{
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+    .grid-flex-3 .grid-flex-colonne{
+        width: calc(100%/2);
+    }
+    .box img{
+        width: 90%;
+    }
+    .fleche-droite , .fleche-gauche{
+        display: none;
+    }
+    
+    .nos-desserts, .nos-avis, .nos-engagements{
+        justify-content: center;
+    }
+
+    .etapes {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 15px;
+
+    }
+    .etapes .separateur {
+        width: 2px;
+        height: 20px;
+        margin-left: 20px;
+    }
+ 
+    .footer{
+        display:block;
+        justify-content: center;
+    }
+    .footer ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .footer ul li{
+        width: 100%;
+    }
+    .titre-footer{
+        margin-bottom: 10px;
+    }
+
+}   
+
+@media (max-width: 550px){
+    .grid-flex-3 .grid-flex-colonne{
+        width: calc(100%/1);
+    }
+
+    .recette-card{
+        width: 90%;
+        margin: auto;
+    }
+    
+}
+
+
+
+#recapitulatif{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    color: #001253;
+    width: 300px; /* ajustez la largeur selon vos besoins */
+    padding: 20px;
+    background-color:#F5EEDC;
+    box-shadow: 0 0 10px #001253;
+    border: 2px solid #001253;
+}
+
+#recapitulatif li, #recapitulatif p, #recapitulatif h3{
+    margin-top: 20px;
+}
+
+#recapitulatif h2{
+    color: #E14D2A;
+}
+
+
