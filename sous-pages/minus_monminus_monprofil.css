@@ -12,7 +12,13 @@
     margin: 0 auto;
   }
   
-  
+/* sousnav */
+
+#profil {
+  background-color:rgba(225, 77, 42, 0.1);
+  border: 2px solid #E14D2A;
+}
+
 /*content*/
 
 .intro{

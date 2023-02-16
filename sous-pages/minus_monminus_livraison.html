@@ -45,17 +45,70 @@
         </nav>
     </header>
     <section class="sousnav">
-        <a href="minus_monminus_monprofil.html"><p>Mon profil</p></a>
+        <a id="profil" href="minus_monminus_monprofil.html"><p>Mon profil</p></a>
         <a href="minus_monminus_mesfiltres.html"><p>Mes filtres</p></a>
-        <a href="minus_monminus_livraison.html"><p id="livraison">Livraison</p></a>
+        <a id="livraison" href="minus_monminus_livraison.html"><p>Livraison</p></a>
         <p>Historique</p>
         <p>Mes recettes</p>
         <p>Service client</p>
         <p>Points fidélité</p>
     </section>
-    <section class="infos">
-
-    </section>
+    <div class="whole">
+        <section class="infos wrapper wrap">
+            <div class="wrapper wrap">
+                <img id="carte" src="/assets/map_localisation.svg" alt="Votre localisation">
+                <div class="alignement_vertical">
+                    <div class="wrapper">
+                        <strong>Adresse principale</strong>
+                        <img id="chevron" src="/assets/chevron-down.svg" alt="chevron vers le bas">
+                    </div>
+                    <div class="wrapper">
+                        <p>3 rue du temple</p>
+                        <img src="/assets/icone_stylo_livraison.svg" alt="icone stylo">
+                    </div>
+                    <strong>Complément d'adresse</strong>
+                    <div class="wrapper">
+                        <p>3ème étage à gauche porte verte</p>
+                        <img src="/assets/icone_stylo_livraison.svg" alt="icone stylo">
+                    </div>
+                </div>    
+            </div>
+            <div class="alignement_vertical">
+                <strong>Horaires de livraison</strong>
+                <div class="wrapper">
+                    <div class="cercle_gris"></div>
+                    <p>8h-9h</p>
+                </div>
+                <div class="wrapper">
+                    <div class="cercle_gris coche"></div>
+                    <p>9h-10h</p>
+                </div>
+                <div class="wrapper">
+                    <div class="cercle_gris"></div>
+                    <p>17h-18h</p>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper amis">
+            <div>
+                <div class="wrapper">
+                    <p>Livrer chez un voisin</p>
+                    <div class="cercle_gris"></div>
+                </div>
+                <strong>Adresse</strong>
+                <div class="wrapper">
+                    <p>3 rue de la forge royale</p>
+                    <img src="/assets/icone_stylo_livraison.svg" alt="">
+                </div>
+                <strong>Complément d'adresse</strong>
+                <div class="wrapper">
+                    <p>6ème étage à droite</p>
+                    <img src="/assets/icone_stylo_livraison.svg" alt="">
+                </div>
+            </div>
+            <strong>Attention en cas d'absence ou d'informations incomplètes la box sera facturée</strong>
+        </section>
+    </div>
     <!-- footer -->
     <div class="footer">
         <ul>
@@ -89,7 +142,6 @@
                 </ul>
             </li>
             <li class="logo-minus-footer"><a href="#"> <img src="/assets/Logo_minus_rondtête.svg" alt="logo-minus-footer"></a></li>
-
         </ul>
 
 

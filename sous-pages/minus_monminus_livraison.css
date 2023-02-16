@@ -1,0 +1,46 @@
+
+.whole section {
+    background-color: rgba(225, 77, 42, 0.1);
+    width: 80%;
+    margin-inline: auto;
+    padding-block: 1.25rem;
+}
+
+.whole section * {
+    margin-inline: 1.25rem;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.infos * {
+    margin: 15px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.alignement_vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cercle_gris {
+    border-radius: 312.5rem;
+    height: 20px;
+    width: 20px;
+    background-color: darkgray;
+}
+
+strong {
+    font-weight: 700;
+}
+
+#livraison {
+    background-color:rgba(225, 77, 42, 0.1);
+    border: 2px solid #E14D2A;
+}

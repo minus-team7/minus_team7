@@ -179,10 +179,3 @@ body{
 .sousnav p:hover {
     background-color:rgba(225, 77, 42, 0.1);
 }
-
-#livraison {
-    background-color:rgba(225, 77, 42, 0.1);
-    border-right: 2px solid #E14D2A;
-    border-left: 2px solid #E14D2A;
-    border-top: 2px solid #E14D2A;
-}
