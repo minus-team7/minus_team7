@@ -1,0 +1,181 @@
+/* footerr */
+body{
+    font-family: 'Catamaran',sans-serif;
+    font-size: 24px;
+}
+
+
+h2{
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+}
+
+
+.box img{
+    width: 70%;
+    display: flex;
+    margin: 50px auto;
+    
+}
+
+.bouton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.bouton a{
+    border:#E14D2A 2px solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #F5EEDC;
+    text-decoration: none;
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+    color: #001253;
+
+}
+
+.bouton a:hover , .bouton a:active{
+    border:#001253 2px solid;
+    background-color: #E14D2A;
+    color: #F5EEDC;
+
+}
+
+.nos-engagements{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+}
+.engagement{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+    justify-content: flex-start;
+    margin-right: 30px;
+    mar
+    align-items: center;
+    text-align: center;
+}
+
+.engagement h2, .engagement p{
+    margin: 10px 0;
+}
+
+.nos-recettes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recette{
+    display: flex;
+    flex-direction: column;
+}
+
+.recette p{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nos-desserts{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.dessert p{
+    margin: 20px 0;
+}
+.nos-avis{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.avis{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    min-width: 220px;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    margin: 40px 30px;
+}
+.avis img{
+    width: 40%;
+    margin: 10px 0;
+}
+
+.footer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:  #001253;
+    color: #f6f6f6;
+    padding: 0 100px;
+    flex-wrap: wrap;
+}
+
+.footer ul{
+    list-style-type: none;
+    margin-right: 60px;
+
+}
+
+.footer ul li{
+    margin-top: 50px;
+}
+.footer a{
+    text-decoration: none;
+    color: #f6f6f6;
+}
+.footer a:hover{
+    text-decoration:underline;
+    color: #E14D2A;
+}
+.titre-footer{
+    font-weight: bold;
+    margin-bottom: 80px;
+    font-family: 'raleway',sans-serif;
+
+}
+.newsletter{
+    padding: 10px 30px;
+    border-radius: 20px
+}
+.reseaux-sociaux{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo-minus-footer{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 650px){
+    .box img{
+        width: 100%;
+    }
+    .fleche-droite , .fleche-gauche{
+        display: none;
+    }
+    
+    .nos-desserts, .nos-avis, .nos-engagements{
+        justify-content: center;
+    }
+
+
+}

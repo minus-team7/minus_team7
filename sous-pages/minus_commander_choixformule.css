@@ -1,13 +1,164 @@
-/* footer  */
-body{
-    font-family: 'catamaran',sans-serif;
-    font-size: 24px;
+.etapes {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20vw;
+    margin-top: 2%;
+}
+
+.etapes .etape {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.etapes .etape#desactiver {
+    opacity: 0.5;
+}
+
+.etapes .etape span.nombre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 2em;
+    height: 2em;
+    aspect-ratio: 1 / 1;
+    background-color: #E14D2A;
+    margin-right: 1rem;
+}
+
+.etapes .separateur {
+    width: 100%;
+    height: 2px;
+    margin: 1vw;
+    background-color: #000000;
+}
+
+body h1 {
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+}
+
+body p {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+.box {
+    box-sizing: border-box;
+    border: 1px solid #E14D2A;
+    box-shadow: 5px 10px 4px rgba(147, 145, 145, 0.25);
+    border-radius: 15px;
+    width: 300px;
+    padding: 25px;
+    background-color: rgba(217, 217, 217, 0.2);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+
+
+
+.box button {
+    border: 3px solid #E14D2A;
+    border-radius: 25px;
+    background: #FFFFFF;
+    width: 187px;
+    height: 57px;
+
+
+}
+
+.boxcentre p {
+    margin-bottom: 9%;
+    font-family: 'Catamaran', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px; 
+    line-height: 140%;
+    text-align: left;
     
 
 }
 
+.boxcentre h1 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+}
+
+.boxcentre h5 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.bouton button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    font-style: normal;
+}
+.bouton button:hover{
+    background-color: #E14D2A;
+    color: #FFFFFF;
+    border: #001253 3px solid;
+}
+
+
+.text p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #231F20;
+}
+
+.text {
+    font-family: 'Catamaran', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+.container {
+    gap: 50px;
+    margin-top: 100px;
+}
+
+h1#choix {
+    margin-top: 60px;
+}
+
 .footer{
-    
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -53,4 +204,57 @@ body{
 .logo-minus-footer{
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 650px){
+    .box img{
+        width: 90%;
+    }
+    .fleche-droite , .fleche-gauche{
+        display: none;
+    }
+
+    .nos-desserts, .nos-avis, .nos-engagements{
+        justify-content: center;
+    }
+
+    .footer{
+        justify-content: center;
+    }
+    .footer ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .footer ul li{
+        width: 100%;
+    }
+    .titre-footer{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .etapes {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .etapes .separateur {
+        width: 2px;
+        height: 20px;
+        margin-left: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   
 }
