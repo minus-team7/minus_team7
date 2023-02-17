@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1155px;
+}
+
+.mod-info p{
+    font-size: 16px;
+    line-height: 25px;
+    margin: auto;
+    width: 752px;
+    margin-top: 15px;
+    
+  
+}
+.baner-image img{
+    margin-top: 20px;
+    
+}
+.mod-info h1{
+    font-size: 42px;
+    font-weight: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+.contenaire .baner-image{
+    width: 100vw;
+    margin-left: calc(-50vw + 577px);
+    
+}
+
+.contenaire--{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.contenaire-- img{
+    margin-top: 30px;
+
+}
+.moood{
+    margin-left: 10px;
+}
+
+.moood p{
+    font-size: 16px;
+    width: 320px;
+    margin: 10px;
+    line-height: 20px;
+    
+}
+   
+.moood h1{
+    font-size: 30px;
+    margin-left: 10px;
+  
+    
+   
+}
+.function{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.tunde{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.elem--{
+    margin-left: 20px;
+}
+
+.elem-- p{
+    margin-top: 20px;
+    line-height: 20px;
+    width: 320px;
+}
+.tunde img{
+    margin-top: 40px;
+
+}
+
+.but--{
+    margin-top: 15px;
+    border: solid beige;
+    border-radius: 600px;
+    padding: 10px 15px;
+    background-color: beige;
+    width: 300px;
+    height: 60px;
+    
+}
+.elem-- h2{
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 20px; 
+}
+
+
+h2 span{
+    border: 1px solid;
+    border-radius: 500px;
+    padding: 5px 10px;
+    font-size: 20px;
+  
+}
+.info--{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.foto img{
+    padding: 40px;
+    margin-left: 20px;
+}
+.mood{
+    font-size: 15px;
+    width: 320px;
+    margin-left: 80px;
+
+}.mood  p{
+  margin-top: 15px;
+  line-height: 20px;
+
+}
+.mood h2{
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 20px;
+}
+.start{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+     margin-left: 25px;
+
+}
+.text p{
+    margin-top: 20px;
+    width: 320px;
+    line-height: 20px;
+
+}
+.dom h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 32px;
+    margin-top: 20px;
+    
+
+}
+
+.dom p{
+     justify-content: center;
+     align-items: center;
+     margin-left: auto;
+     margin-right: auto;
+     width: 320px;
+     line-height: 20px;
+    
+}
+
+.menu h1{
+      text-align: center;
+      font-size: 32px;
+      margin-top: 25px;
+      
+
+}
+
+.marge{
+    width: 260px;
+    height: 154px;
+}
+
+.images{
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 580px;
+      padding: 5px;
+}
+
+.bom{
+    display: flex;
+}
+
+.images img{
+    padding: 10px;
+}
+
+
+
+
+
