@@ -30,7 +30,7 @@ h3 {
 .intro{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 40px;
   padding: 50px;
   background-color: #f6f6f6;
