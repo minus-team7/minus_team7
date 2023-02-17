@@ -46,6 +46,10 @@ nav a{
   border: solid #001253;
 }
 
+.deroulant-burger{
+  text-align: left;
+}
+
 nav .sous{
   display: none;
   position: absolute;
@@ -53,9 +57,20 @@ nav .sous{
   z-index: 100%;
 }
 
+.sous-burger{
+  display: none;
+  position: absolute;
+  width: 250px;
+
+}
+
 nav > ul li:hover .sous{
   display: block;
-} 
+}
+
+nav > ul li:hover .sous-burger{
+  display: block;
+}
 
 .sous li{
   float: none;
@@ -64,11 +79,19 @@ nav > ul li:hover .sous{
   background-color: #001253;
 }
 
-.deroulant > a::after{
-  content: url("chevron-down.svg");
-  vertical-align: middle;
+.sous-burger li{
+  float: none;
+  padding: 15px ;
+  width: 100%;
+  text-align: left;
+  background-color: #001253;
+
 }
 
+.deroulant > a::after{
+  content: url("assets/chevron-down1.svg");
+  vertical-align: middle;
+}
 
 #search-input{
   font-family: catamaran;
@@ -84,6 +107,7 @@ nav > ul li:hover .sous{
 }
 
 @media only screen and (max-width: 650px) {
+
     .main-menu {
         display: none;
     }
@@ -94,10 +118,19 @@ nav > ul li:hover .sous{
     #burger {
         /* margin-right: 60%; */
         position: absolute;
-        right: 0;
+        right: 0; 
     }
+
     header{
-      padding: 10px 5px;
+      padding: 0px;
+    }
+
+    header nav{
+      margin: 0px;
+    }
+    header nav ul::after{
+      display: none;
+      
     }
 }
 
