@@ -1,6 +1,115 @@
 *{
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
+/* Header */
+header{
+    font-family: "raleway";
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 62px;
+    background-color: #001253;
+
+}
+
+header nav{
+  width: 100%;
+  margin: 15px auto;
+  position: sticky;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+header nav ul::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+header nav ul li {
+
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+nav a{
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.deroulant li{
+  padding: 10px;
+  border: solid #001253;
+}
+
+nav .sous{
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 100%;
+}
+
+nav > ul li:hover .sous{
+  display: block;
+} 
+
+.sous li{
+  float: none;
+  width: 100%;
+  text-align: left;
+  background-color: #001253;
+}
+
+.deroulant > a::after{
+  content: url("chevron-down.svg");
+  vertical-align: middle;
+}
+
+
+#search-input{
+  font-family: catamaran;
+  font-size: 13px;
+  border: 0px white solid;
+  border-radius: 25px;
+  width: 280px ; 
+  padding: 10px;
+}
+
+.menu-responsive {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .main-menu {
+        display: none;
+    }
+    .menu-responsive {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #burger {
+        margin-right: 60%;
+    }
+}
+
+
+
+body{
+    font-family: 'catamaran',sans-serif;
+    font-size: 24px;
+    
+
+}
+
+
 .wrapper{
     margin: 0 auto;
     max-width: 1155px;
@@ -35,6 +144,7 @@
     display: flex;
     justify-content: center ;
     align-items: center;
+    flex-wrap: wrap;
 }
 .contenaire-- img{
     margin-top: 30px;
@@ -42,6 +152,7 @@
 }
 .moood{
     margin-left: 10px;
+    flex-wrap: wrap;
 }
 
 .moood p{
@@ -74,6 +185,7 @@
 
 .elem--{
     margin-left: 20px;
+    flex-wrap: wrap;
 }
 
 .elem-- p{
@@ -114,6 +226,7 @@ h2 span{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
    
 }
 .foto img{
@@ -121,7 +234,6 @@ h2 span{
     margin-left: 20px;
 }
 .mood{
-    font-size: 15px;
     width: 320px;
     margin-left: 80px;
 
@@ -139,9 +251,14 @@ h2 span{
     display: flex ;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .text{
      margin-left: 25px;
+}
+.text h2{
+     font-size: 20px;
+     font-weight: 20px;
 
 }
 .text p{
@@ -178,8 +295,8 @@ h2 span{
 }
 
 .marge{
-    width: 260px;
-    height: 154px;
+    width: 270px;
+    height: 180px;
 }
 
 .images{
@@ -188,6 +305,7 @@ h2 span{
       margin: 0 auto;
       width: 580px;
       padding: 5px;
+      flex-wrap: wrap;
 }
 
 .bom{
@@ -198,7 +316,150 @@ h2 span{
     padding: 10px;
 }
 
+.footer{
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:  #001253;
+    color: #f6f6f6;
+    padding: 0 100px;
+    flex-wrap: wrap;
+}
+
+.footer ul{
+    list-style-type: none;
+    margin-right: 60px;
+
+}
+
+.footer ul li{
+    margin-top: 25px;
+}
+.footer a{
+    text-decoration: none;
+    color: #f6f6f6;
+}
+.footer a:hover{
+    text-decoration:underline;
+    color: #E14D2A;
+}
+.titre-footer{
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-family: 'raleway',sans-serif;
+
+}
+.newsletter{
+    padding: 10px 30px;
+    border-radius: 20px
+}
+.reseaux-sociaux{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reseaux-sociaux img:hover{
+    opacity:0.3;
+}
+.logo-minus-footer{
+    display: flex;
+    justify-content: center;
+}
+
+  
+@media (max-width: 720px){
+    .footer{
+            display:block;
+            justify-content: center;
+        }
+        .footer ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 40px 0;
+        }
+    
+        .footer ul li{
+            width: 100%;
+        }
+        .titre-footer{
+            margin-bottom: 10px;
+        }
+        .contenaire--{
+            flex-direction: column;
+        }
+        .contenaire .baner-image{
+            width:100%;
+            margin-left: 0PX;
+
+            
+        }
+        .contenaire-- img{
+            width:100%;
+            margin-left: 2%;
+        
+        }
+        .tunde img{
+            width:100%;
+            margin-left: 1%;
+        }
+        .foto img{
+            width:100%;
+            margin-left: 1%;
+           
+        }
+        
+        .images img{
+            width:100%;
+            margin-left: 1%;
+           
+        }
+
+        .start img{
+            width:100%;
+            margin-left: 1%;
+           
+        }
+        .mod-info p{
+            padding: 5px 40px;
+            width: 100%;
+
+        }
+        .moood p{
+            padding: 5px 40px;
+            width: 100%;
+        }
+        .elem-- p{
+            padding: 2px 15px;
+            width: 100%;
+
+        }
+        .mood p{
+            padding: 5px 40px;
+            width: 100%;
+        }
+        .text p{
+            padding: 5px 40px;
+            width: 100%;
+        }
+        .dom p{
+            padding: 5px 40px;
+            width: 100%;
+        }
+        
+        
+        
+
+    
+        
+    }
+
+   
 
 
 
