@@ -11,7 +11,6 @@
     font-size: 24px;
     line-height: 25px;
     margin: auto;
-    width: 752px;
     margin-top: 15px;
     
   
@@ -36,6 +35,8 @@
     display: flex;
     justify-content: center ;
     align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 .contenaire-- img{
     margin-top: 30px;
@@ -48,7 +49,6 @@
 .moood p{
     font-family: 'catamaran',sans-serif;
     font-size: 24px;
-    width: 320px;
     margin: 10px;
     line-height: 20px;
     
@@ -71,7 +71,7 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     flex-wrap: wrap;
+     flex-wrap: nowrap;
 }
 
 .elem--{
@@ -81,7 +81,6 @@
 .elem-- p{
     margin-top: 20px;
     line-height: 20px;
-    width: 320px;
 }
 .tunde img{
     margin-top: 40px;
@@ -94,7 +93,6 @@
     border-radius: 600px;
     padding: 10px 15px;
     background-color: beige;
-    width: 300px;
     height: 60px;
     
 }
@@ -119,13 +117,11 @@ h2 span{
    
 }
 .foto img{
-    padding: 40px;
-    margin-left: 20px;
+    width: 100%;
 
 }
 .mood{
     font-size: 15px;
-    width: 320px;
     margin-left: 80px;
 
 }.mood  p{
@@ -149,7 +145,6 @@ h2 span{
 }
 .text p{
     margin-top: 20px;
-    width: 320px;
     line-height: 20px;
 
 }
@@ -167,7 +162,6 @@ h2 span{
      align-items: center;
      margin-left: auto;
      margin-right: auto;
-     width: 320px;
      line-height: 20px;
     
 }
@@ -181,26 +175,64 @@ h2 span{
 }
 
 .marge{
-    width: 260px;
-    height: 154px;
+    width: 25%;
+    
 }
 
 .images{
       display: flex;
       flex-direction: column;
       margin: 0 auto;
-      width: 580px;
       padding: 5px;
 }
 
-.bom{
+.bom img {
+    width: 25%;
+    height:154px;
+}
+
+.bom, .bbom{
     display: flex;
+    justify-content: center;
 }
 
 .images img{
     padding: 10px;
 }
 
-
+@media (max-width: 650px){
+    .contenaire .baner-image{
+        margin-left: 0;
+    }
+    .tunde {
+        flex-wrap: wrap;
+    }
+    .contenaire-- {
+        flex-wrap: wrap;
+    }
+    .info-- {
+        flex-wrap: wrap;
+    }
+    .start {
+        flex-wrap: wrap;
+    }
+    .bom, .bbom, .images {
+        flex-wrap: wrap;
+    }
+    .marge {
+        width: 80%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    .tunde img {
+        margin-bottom: 20px;
+    }
+    .start img {
+        margin-bottom: 20px;
+    }
+    .bom img {
+        width: 75%;
+    }
+}
 
 
