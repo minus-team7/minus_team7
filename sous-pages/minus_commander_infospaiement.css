@@ -86,7 +86,7 @@ body{
 }
 .wrapper{
     width: 900px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .etape-container{
@@ -159,3 +159,64 @@ input{
     border: 1px solid rgba(0, 0, 0, 0.25z);
     border-radius: 5px;
 }
+<<<<<<< Updated upstream
+=======
+
+.info-livraison div{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-livraison .adresse{
+    width: 95%;
+}
+
+.localisation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.localisation div{
+    display: flex;
+    flex-direction: column;
+}
+
+.localisation input{
+    width: 390px;
+}
+
+.info-paiement-date{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-paiement-date div input{
+    width: 390px;
+}
+.info-paiement input{
+    width: 95%;
+}
+
+.bouton-payer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.bouton-payer input{
+    cursor: pointer;
+    background-color: white;
+    width:160px;
+    height: 50px;
+    border: 4px #E14D2A solid;
+    border-radius: 25px;
+}
+
+.bouton-payer input:hover{
+    background-color: #E14D2A;
+}
+
+
+@media screen and (max-width:) {
+    
+}
+>>>>>>> Stashed changes
