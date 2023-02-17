@@ -1,237 +1,228 @@
 
 /* GENERAL CSS */
 *,*:before, *:after {
-    box-sizing: border-box;
-  }
-  body{
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .wrapper{
-    max-width: 1155px;
-    margin: 0 auto;
-  }
-  
-/* sousnav */
-
-#profil {
-  background-color:rgba(225, 77, 42, 0.1);
-  border: 2px solid #E14D2A;
+  box-sizing: border-box;
 }
+body{
+  font-family: 'Catamaran', sans-serif;
+  list-style-type: none;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.wrapper{
+  max-width: 1250px; 
+  margin: 0 auto;
+  width: 80%;
+}
+
+h3 {
+  font-family: 'Raleway',sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #001253
+}
+
+
 
 /*content*/
 
 .intro{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    padding: 50px;
-    background-color: #F5EEDC;
-    border: #E14D2A solid 5px;
-  }
-
-.intro .intro-left,
-.intro .intro-right{
-  width: 50%;
-  padding-left: 40px;
-}
-.intro .intro-left{
-  padding-right: 40px;
-  border-right: #4f091d solid 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding: 50px;
+  background-color: #f6f6f6;
+  border: #E14D2A solid 5px;
+  flex-wrap: wrap;
 }
 
-h3 {
-    font-family: 'Raleway',sans-serif;
-    font-weight: bold;
-    font-size: 36px;
-    color: #001253
+.intro-left,
+.intro-right{
+width: 50%;
+}
+.intro-left{
+border-right: #4f091d solid 5px;
 }
 
-body {
-    list-style-type: none;
-    font-family: 'Catamaran',sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-  }
 
 /*::placeholder {
-    opacity : 1;
-    color: #001253;
-    border: solid 2px; 
-    border-color: #001253;
-    
+  opacity : 1;
+  color: #001253;
+  border: solid 2px; 
+  border-color: #001253;
+  
 
 } */
 
 .floating-label
 {
-  position: relative;
-  margin-top: 1.75em;
-  margin-bottom: 1.75em;
+position: relative;
+margin-top: 1.75em;
+margin-bottom: 1.75em;
 }
 
 .floating-label input[type="text"]
 {
-  border: none;
-  border-bottom: 1px solid #E14D2A;
-  margin-bottom: 1px;
-  padding-top: 17px;
-  padding-right: 50px;
+border: none;
+border-bottom: 1px solid #E14D2A;
+margin-bottom: 1px;
+padding-top: 17px;
+padding-right: 50px;
 }
 
 .floating-label input[type="text"]:hover
 {
-  border-bottom: 2px solid #001253;
-  margin-bottom: 0;
+border-bottom: 2px solid #001253;
+margin-bottom: 0;
 }
 
 .floating-label input[type="text"]:focus,
 .floating-label input[type="text"]:active
 {
-  outline: none;
-  border-bottom: 2px solid #001253;
-  margin-bottom: 0;
-  
+outline: none;
+border-bottom: 2px solid #001253;
+margin-bottom: 0;
+
 }
 
 .floating-label input[type="text"] + label
 {
-  position: absolute;
-  pointer-events: none;
-  bottom: 0.1em;
-  left: 0.1em;
-  color: #E14D2A;
-  font-size: 1.0em;
-  transition: margin 0.2s ease, color 0.2s ease, font-size 0.2s ease;
+position: absolute;
+pointer-events: none;
+bottom: 0.1em;
+left: 0.1em;
+color: #E14D2A;
+font-size: 1.0em;
+transition: margin 0.2s ease, color 0.2s ease, font-size 0.2s ease;
 }
 
 .floating-label input[type="text"]:focus + label,
 .floating-label input[type="text"]:active + label,
 .floating-label input[type="text"]:valid + label
 {
-  pointer-events: auto;
-  margin-bottom: 1.75em;
-  font-size: 0.7em;
+pointer-events: auto;
+margin-bottom: 1.75em;
+font-size: 0.7em;
 }
 
 .floating-label input[type="text"]:focus + label,
 .floating-label input[type="text"]:active + label
 {
-  color: #001253;
+color: #001253;
 }
 
 .floating-label input[type="text"].empty:not(:focus) + label,
 .floating-label input[type="text"].empty:not(:active) + label
 {
-  pointer-events: none;
-  margin-bottom: 0;
-  color: #E14D2A;
-  font-size: 1.0em;
+pointer-events: none;
+margin-bottom: 0;
+color: #E14D2A;
+font-size: 1.0em;
 }
 
-.button {
-    
-        display: inline-block;
-        background-color: #f6f6f6;
-        font-family: 'Raleway',sans-serif;
-        font-weight: bold;
-        border-radius: 20px;
-        border: solid 2px; 
-        border-color: #E14D2A;
-        color: #001253;
-        text-decoration : none;
-        text-align: center;
-        font-size: 24px;
-        padding: 10px 10px 10px 10px;
-        flex-wrap: nowrap;
-        width: 200px;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-        margin-bottom: 1.75em;
+.button {   
+display: inline-block;
+background-color: #f6f6f6;
+font-family: 'Raleway',sans-serif;
+font-weight: bold;
+border-radius: 20px;
+border: solid 2px; 
+border-color: #E14D2A;
+color: #001253;
+text-decoration : none;
+text-align: center;
+font-size: 24px;
+padding: 10px;
+flex-wrap: nowrap;
+width: 200px;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+margin-bottom: 1.75em;
 } 
 
 
-
 .button:hover{
-    border:#001253 2px solid;
-    background-color: #E14D2A;
-    color: #F5EEDC;
+  border:#001253 2px solid;
+  background-color: #E14D2A;
+  color: #f6f6f6;
 
 }
 
-/* Customize the checkbox */
+/* customisaiton de la checkbox*/
+
 .checkbox {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #e59381;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .checkbox:hover input ~ .checkmark {
-    background-color: #e59381;
-  }
-  
-  /* When the checkbox is checked, add a orange background */
-  .checkbox input:checked ~ .checkmark {
-    background-color: #E14D2A;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .checkbox input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .checkbox .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid #f6f6f6;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  
+  display: block;
+  position: relative; 
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* cache la case validation par défaut */
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* creation de la case */
+.checkmark {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #e59381;
+}
+
+/* hover de la souris , ajout fond orange clair */
+.checkbox:hover input ~ .checkmark {
+  background-color: #e59381;
+}
+
+/* case valide donc background orange */
+.checkbox input:checked ~ .checkmark {
+  background-color: #E14D2A;
+}
+
+/* creation de l'icone validation en caché quand pas validé*/
+.checkmark:after {
+  content: "";
+  position: absolute; 
+  display: none;
+}
+
+/* encoche validee */
+.checkbox input:checked ~ .checkmark:after {
+  display: block; 
+}
+
+/* Style de l'icone de validation, fleche blanche */
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #f6f6f6;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 
 /* carte de crédit */
 
@@ -239,32 +230,37 @@ body {
 
 
 .cartebancaire {
-  width            : 360px;
-  height           : 400px;
-  margin           : 60px auto 0;
-  border           : 1px solid #001253;
-  border-radius    : 6px;
-  background-color : #f6f6f6;
-  box-shadow       : 1px 2px 3px 0px #001253;
+
+
+width            : 360px;
+height           : 400px;
+margin           : 60px auto 0;
+border           : 1px solid #001253;
+border-radius    : 6px;
+background-color : #f6f6f6;
+box-shadow       : 1px 2px 3px 0px #001253;
 }
 
 .form-header {
-  height        : 60px;
-  padding       : 20px 30px 0;
-  border-bottom : 1px solid #001253;
+height        : 60px;
+padding       : 20px 30px 0;
+border-bottom : 1px solid #4f091d;
 }
 
 .form-body {
-  height  : 340px;
-  padding : 30px 30px 20px;
+height  : 340px;
+padding : 30px 30px 20px;
+display: flex;
+flex-wrap: wrap;
+
 }
 
 /* Title */
 
 .title {
-  margin    : 0;
-  color     : #001253;
-  font-size : 18px;
+margin    : 0;
+color     : #001253;
+font-size : 18px;
 }
 
 /* Common */
@@ -275,15 +271,15 @@ body {
 .paypal-btn,
 .proceed-btn,
 .annee select {
-  height : 42px;
+height : 42px;
 }
 
 .cartebancaire,
 .mois select,
 .annee select {
-  font-size   : 14px;
-  font-weight : 100;
-  line-height : 14px;
+font-size   : 14px;
+font-weight : 100;
+line-height : 14px;
 }
 
 .cartebancaire,
@@ -291,108 +287,114 @@ body {
 .cvv-input input,
 .mois select,
 .annee select {
-  color   : #4f091d;
-  opacity : .7;
+color   : #4f091d;
+opacity : .7;
 }
 
 /* Numéro de carte */
 
 .cartebancaire {
-  width         : 100%;
-  margin-bottom : 20px;
-  padding-left  : 20px;
-  border        : 2px solid #001253;
-  border-radius : 6px;
+width         : 100%;
+margin-bottom : 20px;
+padding-left  : 20px;
+border        : 2px solid #001253;
+border-radius : 6px;
 }
 
 /* Date */
 
 .mois select,
 .annee select {
-  -moz-appearance     : none;
-  -webkit-appearance  : none;
-  width               : 145px;
-  margin-bottom       : 20px;
-  padding-left        : 20px;
-  border              : 2px solid #001253;
-  border-radius       : 6px;
- 
-  background-position : 85% 50%;
+
+width               : 145px;
+margin-bottom       : 20px;
+padding-left        : 20px;
+border              : 2px solid #001253;
+border-radius       : 6px;
+
+background-position : 85% 50%;
 }
 
 .mois select {
-  float : left;
+float : left;
+margin-right: 20px;
 }
 
 .annee select {
-  float : right;
+float : right;
+margin-right: 50px;
 }
 
 /* Espace vérification */
 
 .cvv-input input {
-  width         : 145px;
-  float         : left;
-  padding-left  : 20px;
-  border        : 2px solid #001253;
-  border-radius : 6px;
-  background    : #f6f6f6;
+width         : 145px;
+float         : left;
+padding-left  : 20px;
+border        : 2px solid #001253;
+border-radius : 6px;
+background    : #f6f6f6;
 }
 
 .cvv-details {
-  float         : right;
-  margin-bottom : 35px;
-  font-size     : 12px;
-  font-weight   : 300;
-  line-height   : 16px;
+float         : right;
+margin-bottom : 35px;
+font-size     : 12px;
+font-weight   : 300;
+line-height   : 16px;
 }
 
 .cvv-details p {
-  margin-top : 6px;
+margin-top : 6px;
 }
 
-/* Buttons */
+/* Bouton */
 
 
-.proceed-btn {
-  cursor: pointer;
-  width         : 100%;
-  border-color  : transparent;
-  border-radius : 6px;
-  font-size     : 16px;
+.confirmer-btn {
+cursor: pointer;
+width         : 200px;
+border-color  : transparent;
+border-radius : 20px;
+font-size     : 16px;
+padding: 10px;
+
 }
 
-.proceed-btn {
-  margin-bottom : 10px;
-  background-color: #f6f6f6;
-  border-radius: 20px;
-  border:solid 2px;
-  border-color: #E14D2A ;
+.confirmer-btn {
+margin-bottom : 10px;
+background-color: #f6f6f6;
+border-radius: 20px;
+border:solid 2px;
+border-color: #E14D2A ;
+
+
+
+}
+
+
+
+.confirmer-btn:hover{
+  border:#001253 2px solid;
+  background-color: #E14D2A;
   
 
-  
+}
+
+.confirmer-btn a {
+text-decoration : none;
+cursor          : pointer;
+font-family: 'Raleway',sans-serif;
+font-weight: bold;
+color: #001253;
 }
 
 
 
-.proceed-btn:hover{
-    border:#001253 2px solid;
-    background-color: #E14D2A;
-    color: #f6f6f6;
+.confirmer-btn:hover a {
+color: #f6f6f6;
 
 }
-
-.proceed-btn a {
-  text-decoration : none;
-  cursor          : pointer;
-  font-family: 'Raleway',sans-serif;
-  font-weight: bold;
-  color: #001253;
-}
-
-
-
-
 
 
 
@@ -428,58 +430,123 @@ body {
 
 /* footer  */
 body{
-    font-family: 'catamaran',sans-serif;
-    font-size: 24px;
-    
+  font-family: 'catamaran',sans-serif;
+  font-size: 24px;
+  
 
 }
 
 .footer{
-    
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color:  #001253;
-    color: #f6f6f6;
-    padding: 0 100px;
-    flex-wrap: wrap;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:  #001253;
+  color: #f6f6f6;
+  padding: 0 100px;
+  flex-wrap: wrap;
 }
 
 .footer ul{
-    list-style-type: none;
-    margin-right: 60px;
+  list-style-type: none;
+  margin-right: 60px;
 
 }
 
 .footer ul li{
-    margin-top: 50px;
+  margin-top: 50px;
 }
 .footer a{
-    text-decoration: none;
-    color: #f6f6f6;
+  text-decoration: none;
+  color: #f6f6f6;
 }
 .footer a:hover{
-    text-decoration:underline;
-    color: #E14D2A;
+  text-decoration:underline;
+  color: #E14D2A;
 }
 .titre-footer{
-    font-weight: bold;
-    margin-bottom: 80px;
-    font-family: 'raleway',sans-serif;
+  font-weight: bold;
+  margin-bottom: 80px;
+  font-family: 'raleway',sans-serif;
 
 }
 .newsletter{
-    padding: 10px 30px;
-    border-radius: 20px
+  padding: 10px 30px;
+  border-radius: 20px
 }
 .reseaux-sociaux{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .logo-minus-footer{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
+
+
+
+@media screen and (max-width: 850px) {
+
+ 
+.intro {
+    padding: 7px;
+    
+}
+
+
+.intro-right, .intro-left {
+  display: block;
+  width: 100%;
+}
+
+.intro-left {
+  padding-bottom: 50px;
+  width: 95%;
+  border-right: none;
+}
+
+
+  .floating-label input[type="text"] + label {
+    white-space: nowrap;
+}
+
+
+.credit-card .form-header .title{
+  white-space: nowrap;
+  
+  margin: -10px;
+  margin-bottom: 2px;
+}
+
+.form-header {
+  padding: 30px 10px;
+}
+
+.form-body {
+  margin-top: -50px;
+}
+
+form.credit-card {
+  margin-bottom: 300px;
+}
+
+
+
+.mois select {
+  margin-top: 5px;
+}
+
+.card-verification {
+  display: flex;
+}
+
+
+.cvv-details p {
+  padding-left: 20px;
+  
+  
+}
+}
