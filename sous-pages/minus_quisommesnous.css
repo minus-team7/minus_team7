@@ -7,7 +7,8 @@
 }
 
 .mod-info p{
-    font-size: 16px;
+    font-family: 'catamaran',sans-serif;
+    font-size: 24px;
     line-height: 25px;
     margin: auto;
     width: 752px;
@@ -45,7 +46,8 @@
 }
 
 .moood p{
-    font-size: 16px;
+    font-family: 'catamaran',sans-serif;
+    font-size: 24px;
     width: 320px;
     margin: 10px;
     line-height: 20px;
@@ -119,6 +121,7 @@ h2 span{
 .foto img{
     padding: 40px;
     margin-left: 20px;
+
 }
 .mood{
     font-size: 15px;
@@ -197,7 +200,6 @@ h2 span{
 .images img{
     padding: 10px;
 }
-
 
 
 
