@@ -3,10 +3,9 @@ body{
     font-family: 'Catamaran',sans-serif;
     font-size: 24px;
 }
-
 .wrapper{
     width: 900px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 .etape-container{
@@ -47,8 +46,17 @@ h2, h3{
     text-align: center;
 }
 
-.info-compte{
-    margin-top: 35px;
+h2{
+    font-family: "raleway";
+    font-size: 48px;
+    line-height: 140px;
+}
+
+h3{
+    font-family: "raleway";
+    font-size: 36px;
+    line-height: 100px;
+
 }
 
 .info-user {
@@ -56,15 +64,10 @@ h2, h3{
     justify-content: space-between;
 }
 
-/* .info-user div{
-    display: flex;
-    flex-direction: column;
-} */
-
 input{
     display: inline-block;
     width: 400px;
-    height: 20px;
+    margin:5px 0;
     padding: 0.5rem 0.1rem;
     border: 1px solid rgb(221, 221, 221);
     border-radius: 5px;
@@ -73,12 +76,14 @@ input{
 .date-naiss{
     margin: 15px 0px;
 }
+
 .date{
     width: 150px;
     height: 20px;
     border: 1px solid rgba(0, 0, 0, 0.25z);
     border-radius: 5px;
 }
+
 body{
     font-family: 'catamaran',sans-serif;
     font-family: 'Catamaran',sans-serif;
@@ -89,78 +94,104 @@ body{
     margin: 50px auto;
 }
 
-.etape-container{
+
+.info-livraison div{
     display: flex;
-
-}
-.etape{
-    display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
-.etape-x{
-    display: flex;
-    align-items: center;
+.info-livraison .adresse{
+    width: 95%;
 }
 
-.etape::after{
-    content:"";
-    border: 1px solid black;
-    border-radius: 2px;
-    width: 100px;
-    margin: 5px;
-}
-
-.etape-n{
-    cursor: pointer;
-    width: 56px;
-    height: 54px;
-    border: 2px solid white;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #E14D2A;
-}
-
-h2, h3{
-    text-align: center;
-}
-
-.info-compte{
-    margin-top: 35px;
-}
-
-.info-user {
+.localisation{
     display: flex;
     justify-content: space-between;
 }
 
-/* .info-user div{
+.localisation div{
     display: flex;
     flex-direction: column;
-} */
-
-input{
-    display: inline-block;
-    width: 400px;
-    height: 20px;
-    padding: 0.5rem 0.1rem;
-    border: 1px solid rgb(221, 221, 221);
-    border-radius: 5px;
 }
 
-.date-naiss{
-    margin: 15px 0px;
+.localisation input{
+    width: 390px;
 }
-.date{
-    width: 150px;
-    height: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.25z);
-    border-radius: 5px;
+
+.info-paiement-date{
+    display: flex;
+    justify-content: space-between;
 }
-<<<<<<< Updated upstream
-=======
+
+.info-paiement-date div input{
+    width: 390px;
+}
+.info-paiement input{
+    width: 95%;
+}
+
+.bouton-payer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.bouton-payer input{
+    cursor: pointer;
+    background-color: white;
+    width:160px;
+    height: 50px;
+    border: 4px #E14D2A solid;
+    border-radius: 25px;
+}
+
+.bouton-payer input:hover{
+    background-color: #E14D2A;
+}
+
+
+@media screen and (max-width:900px) {
+    .localisation, .info-paiement-date, .info-user{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input, .adresse, .info-livraison, .info-paiement,.localisation input, .info-paiement-date div input {
+        width: 81%;
+
+    }
+
+    .date-naiss input{
+        width: 30%;
+    }
+
+    .wrapper{
+        width: 100%;
+    }
+
+    .etape::after{
+        width: 0px;
+    }
+
+    .etape-container{
+        justify-content: center;
+    }
+
+    .etape-container{
+        display: none;
+    }
+
+    h2{
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    h3{
+        font-size: 17px;
+        line-height: 40px;
+    }
+
+
+}
 
 .info-livraison div{
     display: flex;
@@ -219,4 +250,4 @@ input{
 @media screen and (max-width:) {
     
 }
->>>>>>> Stashed changes
+
